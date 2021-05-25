@@ -1,0 +1,10 @@
+<div class="offset-sm-3 col-sm-6">
+  <%= simple_form_for(task) do |t| %>
+    <%= t.input :title %>
+    <%= t.input :details %>
+    <%= t.input :completed %>
+    <%= t.submit %>
+  <% end %>
+</div>
+
+<%= link_to "Go back", tasks_path %>
